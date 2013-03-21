@@ -1,4 +1,12 @@
 Omrails::Application.routes.draw do
+  get 'about' => 'pages#about'
+  get 'users' => 'pages#users'
+  get 'login' => 'pages#login'
+  get 'bofd' => 'pages#bofd'
+  get 'donate' => 'pages#donate'
+
+  root :to => 'pages#home'
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
